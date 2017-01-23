@@ -1,108 +1,39 @@
 <!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head>
-    <title>To Lily</title>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <style type="text/css">
-    @font-face {
-    font-family: digit;
-    src: url('digital-7_mono.ttf') format("truetype");
-}
-    </style>
-    <link href="css/default.css" type="text/css" rel="stylesheet">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/garden.js"></script>
-    <script type="text/javascript" src="js/functions.js"></script>
-  </head>
+<html>
+	<head>
+		<title>Keep Calm and Carry On</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+          <audio id="sound" autoplay loop>
+            <source src="media/forever-love.mp3" type="audio/mpeg" />
+            <!-->
+            <!--<source src="media/fall_in_love.ogg" type="audio/ogg" />-->
+            Your browser does not support HTML5 audio.
+          </audio>
 
-  <body>
-    <div id="mainDiv">
-      <div id="content">
-        <audio id="sound" autoplay loop>
-          <source src="media/miss_you.mp3" type="audio/mpeg" />
-          <!-->
-          <!--<source src="media/fall_in_love.ogg" type="audio/ogg" />-->
-          Your browser does not support HTML5 audio.
-        </audio>
-	<div id="code">
-	  <span class="comments">/**</span><br />
-	  <span class="space"/><span class="comments">* Life was like a box of chocolates. You never know what you're gonna get.</span><br />
-	  <span class="space"/><span class="comments">* For me, I found the apple of my eye luckily by courage.</span><br />
-	  <span class="space"/><span class="comments">*/</span><br />
-	  Boy i = <span class="keyword">new</span> Boy(<span class="string">"Weizhi"</span>);<br />
-	  Girl u = <span class="keyword">new</span> Girl(<span class="string">"Lily"</span>);<br />
-	  <span class="comments">// May 21, 2016, I told you I'm falling in love with you. </span><br />
-	  i.love(u);<br />
-	  <span class="comments">// As fate would have it, you have the same feeling with me.</span><br />
-	  u.love(i);<br />
-	  <span class="comments">// Since then, I miss u every day.</span><br />
-	  i.miss(u);<br />
-	  <span class="comments">// I cannot forget the warmest morning call at 5 am you reminded me not being late for the plane</span><br />
-	  u.takeCareOf(i);<br />
-          <span class="comments">// and the tepid milk. </span><br />
-          i.amTouchedBy(u);<br />
-          <span class="comments">// Though we will be separate for a long period, </span><br />
-	  <span class="keyword">while</span> (<span class="keyword">true</span>) {<br />
-	  <span class="placeholder"/>i.waitFor(u);<br />
-          <span class="placeholder"/>i.love(u);<br />
-          <span class="placeholder"/>i.miss(u);<br />          
-	  }<br />
-          <span class="comments">// Thank you for the happy time you bring to me. </span><br />
-          i.thank(u); <br />
-          <span class="comments">// Meeting you was fate, becoming your friend was a choice, but falling in love with you was beyond my control.</span><br />
-          <span class="comments">//  ..   .-..  ---  ...-  .   -.--  ---  ..- </span><br />
-	</div>
-	<div id="loveHeart">
-	  <canvas id="garden"></canvas>
-	  <div id="words">
-	    <div id="messages">
-	      丽丽，我们已经相爱了
-	      <div id="elapseClock"></div>
-	    </div>
-	    <div id="loveu">
-	      余生请多指教，<br/>来世仍多包涵<br/>
-	      <div class="signature">- 威志</div>
-	    </div>
-	  </div>
-	</div>
-      </div>
-      <div id="copyright">
-	Inspired by <a href="https://github.com/hackerzhou/Love">Hackerzhou's Love</a> project.<br />
-	Copyright © 2016 <a href='http://greenwicher.com'>greenwicher.com</a> 
-      </div>
-    </div>
-    <script type="text/javascript">
-  var offsetX = $("#loveHeart").width() / 2;
-var offsetY = $("#loveHeart").height() / 2 - 55;
-var together = new Date();
-together.setFullYear(2016, 5, 22);
-together.setHours(23);
-together.setMinutes(55);
-together.setSeconds(0);
-together.setMilliseconds(0);
+	  <!-- Header -->
+	  <section id="footer">
+	    <footer class="major">
+	      <p><h1>我的意中人是个盖世英雄，有一天他会踩着七色的云彩来娶我</h1></p>
+	      <p><h1>我猜中了前头，可是我猜不着这结局</h1></p>              
+	    </footer>
+	  </section>
 
-if (!document.createElement('canvas').getContext) {
-  var msg = document.createElement("div");
-  msg.id = "errorMsg";
-  msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
-  document.body.appendChild(msg);
-  $("#code").css("display", "none")
-  $("#copyright").css("position", "absolute");
-  $("#copyright").css("bottom", "10px");
-  document.execCommand("stop");
-} else {
-  setTimeout(function () {
-    startHeartAnimation();
-  }, 5000);
 
-  timeElapse(together);
-  setInterval(function () {
-    timeElapse(together);
-  }, 500);
+	  <!-- Scripts -->
+	  <script src="assets/js/jquery.min.js"></script>
+	  <script src="assets/js/jquery.scrollex.min.js"></script>
+	  <script src="assets/js/jquery.scrolly.min.js"></script>
+	  <script src="assets/js/skel.min.js"></script>
+	  <script src="assets/js/util.js"></script>
+	  <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	  <script src="assets/js/main.js"></script>
 
-  adjustCodePosition();
-  $("#code").typewriter();
-}
-    </script>
-  </body>
-</html>
+	</body>
+</html
